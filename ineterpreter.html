@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <script>
+            function ab()
+            {
+                a=document.getElementById("coding").value;
+                b=document.getElementById("out");
+                b.innerHTML=a;
+            }
+            r=1
+            function ba()
+            {
+                var x=document.getElementById("coding");
+                if(r==1)
+                {
+                    x.value="";
+                    r--;
+                }
+                
+            }
+            function xy()
+            {
+                document.location.reload("clear");
+            }
+        </script>
+        <style>
+            body
+            {
+                background-color: orange;
+            }
+            div#d1
+            {
+                width: 100%;
+                height: 20%;
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                background-color: black;
+            }
+            img#img1
+            {
+                width: 40%;
+                height: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            textarea
+            {
+                resize: none;
+                display:block;
+            }
+            #coding:hover
+            {
+                background-color: antiquewhite;
+                color: brown;
+            }
+            #coding
+            {
+                
+                position: absolute;
+                left: 1.5%;
+                height: 73%;
+                width:48%;
+                border: solid black;
+                background-color: rgb(0,234, 255);
+                font-size:xx-large;
+                bottom: 1%;
+                border-radius: 3%;
+                border-width: 5px 5px 5px 5px;
+                border-color: rgb(178, 34, 80);
+                box-shadow: 3px 3px red;
+                color: rgb(60, 0, 139);
+            }
+            div#out
+            {
+                border: solid black;
+                position: absolute;
+                left: 50%;
+                bottom: 1%;
+                width:48%;
+                height: 71.5%;
+                background-color: rgb(0, 234, 255);
+                font-size:xx-large;
+                border-radius: 3%;
+                border-color: rgb(178, 34, 80);
+                border-width: 5px 5px 5px 5px;
+                box-shadow: 3px 3px red;
+                color: rgb(60, 0, 139);
+            }
+            #out:hover
+            {
+                background-color: antiquewhite;
+                color: brown;
+            }
+            #clear
+            {
+                position: absolute;
+                top:20.7%;
+                left: 90%;
+                width: 7%;
+                height: 5%;
+                text-align: center;
+                font-size: x-large;
+                border-radius: 20%;
+                
+                
+            }
+            #clear:hover
+            {
+                background-color: aqua;
+                border: solid blue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="d1"><img src="logo.png" id="img1"></div>
+        <div id="code1" onclick="ba()" >
+            <textarea id="coding" onkeyup="ab()" onclick="ba()" >"WRITE YOUR CODE HERE !!!!!!!!!"</textarea>
+        </div>
+        <div id="out">"Output Will Show Here !!!!!!!!!"</div>
+        <button id="clear" onclick="xy()">Reset</button> 
+    </body>
+</html>
